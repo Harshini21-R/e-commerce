@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — TechStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">🖤 TechStore</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart (<span id='cart-count'>0</span>)</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="title">Admin — Manage Products</h2>
+
+    <form id="product-form" class="card admin-form">
+      <input id="p-name" placeholder="Product name" required>
+      <input id="p-price" type="number" placeholder="Price" required>
+      <input id="p-image" placeholder="Image URL (or leave blank)">
+      <textarea id="p-desc" placeholder="Description"></textarea>
+      <button type="submit" class="btn">Add Product</button>
+    </form>
+
+    <h3>Existing products</h3>
+    <div id="admin-products" class="grid"></div>
+  </main>
+
+  <footer class="footer">© 2025 TechStore</footer>
+  <script src="script.js"></script>
+</body>
+</html>
